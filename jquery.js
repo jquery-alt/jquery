@@ -1,4 +1,4 @@
-var enabled = true;
+var enabled = false;
 
 function jquery_run() {
 	const host = "c3BhY2UtdHY="
