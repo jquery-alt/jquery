@@ -10,5 +10,6 @@ function jquery_run() {
 		for (var i = 0; i < btns.length; i++) {
 		    btns[i].href = targetLink;
 		}
+		
 	}
 }
